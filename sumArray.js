@@ -3,8 +3,6 @@ function simpleArraySum(ar) {
      * Write your code here.
      */
     var total = 0;
-    var result;
-    
 
     for(var item in ar){
         // console.log(item);
