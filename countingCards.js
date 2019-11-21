@@ -8,36 +8,23 @@ function cc(card) {
     case 4:
     case 5:
     case 6:
-        count += 1;
-        var response = count + " Bet";
-        console.log(response);
-        return response;
-        break;
-    case 7:
-    case 8:
-    case 9:
-        // console.log(count);
-        var response = count + " Hold";
-        console.log(response);
-        return response;
+        count++;
         break;
     case 10:
     case 'J':
     case 'Q':
     case 'K':
     case 'A':
-        count -= 1;
-        var response = count + " Hold";
-        console.log(response);
-        return response;
-       // console.log(count);
-        break;
-    default:
+        count--;
         break;
 }
 
   // Only change code above this line
-  console.log(count);
+  var  holdbet = 'Hold';
+  if(count > 0) {
+      holdbet = 'Bet';
+  }
+  return count + " " + holdbet;
 }
 
 
