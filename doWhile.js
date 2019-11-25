@@ -1,6 +1,6 @@
 var ourArray = []; 
 var i = 5;
-while (i < 5) {
+do {
   ourArray.push(i);
   i++;
-}
+} while (i < 5);
