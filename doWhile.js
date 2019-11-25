@@ -1,8 +1,6 @@
-var ourArray = [];
-var i = 0;
-do {
+var ourArray = []; 
+var i = 5;
+while (i < 5) {
   ourArray.push(i);
   i++;
-  console.log(ourArray);
-} while (i < 5);
-
+}
