@@ -1,10 +1,9 @@
 function multiply(arr, n) {
-    var product = arr[0];
-    for (var i = 1; i <= n; i++) {
-        product *= arr[i];
+    if (n <= 0) {
+      return arr[0];
+    } else {
+      console.log(multiply(arr, n - 1) * arr[n]);
     }
-    console.log(product);
-    return product;
   }
 
-  multiply([1, 2, 3, 4], 1)
+  multiply([1, 2, 3, 4], 4);
